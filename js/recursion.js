@@ -26,17 +26,15 @@ for(let i=0; i<=20 ; i++){
 }
 
 function factorial(n){
+
     // if (n < 2) return 1
     // return n * factorial(n-1)
 
-
-    return ( (n == 1)? 1 : 
-             (!!n) ? (n * factorial(n - 1)) :  
-              undefined)
+    return   (!!n) ? (n * factorial(n - 1)) :  1
 }
 
 
-console.log(factorial(0)) // undefined
+console.log(factorial(0)) // 1
 console.log(factorial(1)) // 1
 console.log(factorial(2)) // 2
 console.log(factorial(3)) // 6
